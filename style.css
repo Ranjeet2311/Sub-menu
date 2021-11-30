@@ -11,6 +11,7 @@
 .outer-wrapper {
   background-color: #b5ecfa;
   height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,13 +21,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+  position: absolute;
   font-size: 1rem;
 }
 
 .outer-wrapper .main-menu-wrapper,
 .outer-wrapper .sub-menu-wrapper {
-  width: 20%;
+  width: 25%;
   background-color: #ffffff;
   border: 1px solid rgba(235, 235, 235, 0.8);
   border-radius: 10px;
@@ -69,6 +70,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .outer-wrapper .btn .menu-links .first-icon {
@@ -78,17 +80,14 @@
 }
 
 .outer-wrapper .btn .menu-links p {
-  width: 80%;
   text-align: start;
 }
 
 .outer-wrapper .btn .menu-links .second-icon {
-  display: inline-block;
-  height: em;
-  line-height: 2em;
-  position: relative;
-  vertical-align: middle;
-  width: 2.5em;
+  position: absolute;
+  top: 0px;
+  right: 6px;
+  padding: 11px 4px;
 }
 
 .outer-wrapper .btn .menu-links .icon-orange {

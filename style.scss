@@ -17,15 +17,16 @@ $color-hr: #f7f7f7;
   //   background-color: rgba($color-bg, 0.9);
   background-color: $color-bg;
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   font-size: 1rem;
 
   .main-menu-wrapper,
   .sub-menu-wrapper {
-    width: 20%;
+    width: 25%;
     background-color: $color-white;
     border: 1px solid rgba($color-silver, 0.8);
     border-radius: 10px;
@@ -53,6 +54,7 @@ $color-hr: #f7f7f7;
     .menu-links {
       display: flex;
       align-items: center;
+      position: relative;
 
       .first-icon {
         padding: 0.5rem;
@@ -60,17 +62,14 @@ $color-hr: #f7f7f7;
         font-size: 1rem;
       }
       p {
-        width: 80%;
         text-align: start;
       }
 
       .second-icon {
-        display: inline-block;
-        height: em;
-        line-height: 2em;
-        position: relative;
-        vertical-align: middle;
-        width: 2.5em;
+        position: absolute;
+        top: 0px;
+        right: 6px;
+        padding: 11px 4px;
       }
       .icon-orange {
         color: orangered;
