@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.outer-wrapper {
+  background-color: #b5ecfa;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-size: 1rem;
+}
+
+.outer-wrapper .main-menu-wrapper,
+.outer-wrapper .sub-menu-wrapper {
+  width: 20%;
+  background-color: #ffffff;
+  border: 1px solid rgba(235, 235, 235, 0.8);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.outer-wrapper .btn {
+  width: 90%;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0.3rem 0.4rem;
+}
+
+.outer-wrapper .btn:hover {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.outer-wrapper .btn .menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.outer-wrapper .btn .menu-links .first-icon {
+  padding: 0.5rem;
+  color: gray;
+  font-size: 1rem;
+}
+
+.outer-wrapper .btn .menu-links p {
+  width: 80%;
+  text-align: start;
+}
+
+.outer-wrapper .btn .menu-links .second-icon {
+  display: inline-block;
+  height: em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.outer-wrapper .btn .menu-links .icon-orange {
+  color: orangered;
+}
+
+.outer-wrapper .btn .menu-links .icon-blue {
+  color: blue;
+}
+
+.outer-wrapper .btn .menu-links .icon-green {
+  color: green;
+}
+
+.outer-wrapper .hr {
+  background-color: #ebebeb;
+  opacity: 0.3;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

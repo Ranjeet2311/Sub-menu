@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+$color-white: #ffffff;
+$color-bg: #b5ecfa;
+$color-silver: #ebebeb;
+$color-hr: #f7f7f7;
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+.outer-wrapper {
+  //   background-color: rgba($color-bg, 0.9);
+  background-color: $color-bg;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1rem;
+
+  .main-menu-wrapper,
+  .sub-menu-wrapper {
+    width: 20%;
+    background-color: $color-white;
+    border: 1px solid rgba($color-silver, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 90%;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0.3rem 0.4rem;
+
+    &:hover {
+      background-color: $color-silver;
+      border-radius: 10px;
+      transition: all 0.3s ease-in;
+      cursor: pointer;
+    }
+
+    .menu-links {
+      display: flex;
+      align-items: center;
+
+      .first-icon {
+        padding: 0.5rem;
+        color: gray;
+        font-size: 1rem;
+      }
+      p {
+        width: 80%;
+        text-align: start;
+      }
+
+      .second-icon {
+        display: inline-block;
+        height: em;
+        line-height: 2em;
+        position: relative;
+        vertical-align: middle;
+        width: 2.5em;
+      }
+      .icon-orange {
+        color: orangered;
+      }
+      .icon-blue {
+        color: blue;
+      }
+      .icon-green {
+        color: green;
+      }
+    }
+  }
+  .hr {
+    background-color: $color-silver;
+    opacity: 0.3;
+    width: 100%;
+  }
+}
